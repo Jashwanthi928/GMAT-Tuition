@@ -193,16 +193,10 @@ body {
 .contact-heading{
     margin-top: 3%;
     font-weight: 400;
-    font-style: italic;
+    /* font-style: italic; */
     color:#414042;
     font-size: 1.8rem;
-}
-.contact-heading1{
-    margin-top: 1%;
-    font-weight: 400;
-    font-style: italic;
-    color:#414042;
-    font-size: 1.8rem;
+    text-align: center;
 }
 .contact-name{
     margin-top: 1%;
