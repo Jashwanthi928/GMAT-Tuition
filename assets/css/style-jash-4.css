@@ -93,7 +93,7 @@ body {
   padding: 1% 0% 1% 0%;
 }
 .online-section {
-  height: 85vh;
+  height: 90vh;
 }
 .online-heading {
   text-align: center;
@@ -198,7 +198,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #f1f1f1;
-  height: 70vh;
+  height: 80vh;
 }
 .contact-heading {
   margin-top: 3%;
@@ -271,27 +271,7 @@ footer {
 footer p {
   padding: 0.5%;
 }
-@media only screen and (max-width: 1100px) {
-  .banner {
-    background-size: 100% 60%;
-  }
-  .video-section1 {
-    height: 35vh;
-  }
-  .online-section {
-    height: 55vh;
-  }
-  .video-section2 {
-    height:40vh;
-  }
-  .contact-section {
-    height: 40vh;
-  } 
-}
 @media only screen and (max-width: 800px) {
-  .banner {
-    background-size: 100% 70%;
-  }
   .video-section1 {
     height: 45vh;
   }
