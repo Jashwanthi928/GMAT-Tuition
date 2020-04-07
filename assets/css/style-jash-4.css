@@ -15,7 +15,7 @@ body {
 .banner {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -27,9 +27,15 @@ body {
   background-image: url(../img/jash-img-4/banner.jpg);
 }
 .container {
-  width: 1000px;
-  margin: auto;
+  /* width: 1000px;
+  margin: auto; */
+  width: 100%;
+  padding-right: 8%;
+  padding-left: 8%;
+  margin-right: auto;
+  margin-left: auto;
 }
+ 
 .logo {
   padding: 8% 0% 8% 0%;
 }
@@ -87,7 +93,7 @@ body {
   padding: 1% 0% 1% 0%;
 }
 .online-section {
-  height: 90vh;
+  height: 85vh;
 }
 .online-heading {
   text-align: center;
@@ -152,13 +158,17 @@ body {
 .video-section2 {
   background-image: linear-gradient(to right, #3e4047, #343338);
   height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
 }
 .video-section2-heading {
   font-weight: 700;
   color: white;
   font-size: 4rem;
   padding: 2% 0% 2% 0%;
-  text-align: center;
+  /* text-align: center; */
 }
 .videos {
   display: flex;
@@ -166,11 +176,11 @@ body {
   justify-content: space-evenly;
 }
 .btn-primary-3 {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%);
+  /* position: absolute; */
+  /* left: 50%; */
+  /* -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
-  transform: translate(-50%);
+  transform: translate(-50%); */
   text-decoration: none;
   background-color: #fdca5b;
   color: #000;
@@ -188,30 +198,30 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #f1f1f1;
-  height: 80vh;
+  height: 70vh;
 }
-.contact-heading{
-    margin-top: 3%;
-    font-weight: 400;
-    /* font-style: italic; */
-    color:#414042;
-    font-size: 1.8rem;
-    text-align: center;
+.contact-heading {
+  margin-top: 3%;
+  font-weight: 400;
+  /* font-style: italic; */
+  color: #414042;
+  font-size: 1.8rem;
+  text-align: center;
 }
-.contact-name{
-    margin-top: 1%;
-    font-weight: 400;
-    color:#414042;
-    font-size: 1.8rem; 
+.contact-name {
+  margin-top: 1%;
+  font-weight: 400;
+  color: #414042;
+  font-size: 1.8rem;
 }
-.contact-register{
-    margin-top: 1%;
-    font-weight: 700;
-    font-size: 1.8rem;
-    color:#414042;
+.contact-register {
+  margin-top: 1%;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #414042;
 }
 .contact-form {
-    margin-top: 3%;
+  margin-top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,12 +262,216 @@ input {
   margin-bottom: 4%;
 }
 footer {
-    background-color: #471e51;
+  background-color: #471e51;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
+footer p {
+  padding: 0.5%;
+}
+@media only screen and (max-width: 1100px) {
+  .banner {
+    background-size: 100% 60%;
+  }
+  .video-section1 {
+    height: 35vh;
+  }
+  .online-section {
+    height: 55vh;
+  }
+  .video-section2 {
+    height:40vh;
+  }
+  .contact-section {
+    height: 40vh;
+  } 
+}
+@media only screen and (max-width: 800px) {
+  .banner {
+    background-size: 100% 70%;
+  }
+  .video-section1 {
+    height: 45vh;
+  }
+  .online-section {
+    height: 70vh;
+  }
+  .online-main-description {
     font-size: 1.5rem;
-    font-weight: 400;
+  }
+  .online-sub-description {
+    font-size: 1.3rem;
+  }
+  .video-section2 {
+    height:70vh;
+  }
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .video3{
+    padding-top: 3%;
+  }
+  .contact-section {
+    height: 50vh;
+  }  
+}
+@media only screen and (max-width: 450px) {
+  .banner {
+    background-size: 90%;
+    align-items: center;
+    /* height: 100vh; */
+    padding-bottom:0px !important;
+    background-attachment: scroll;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(72, 30, 81, 0.8),
+      rgba(72, 30, 81, 0.8)
+    ),
+    url(../img/jash-img-4/phone-banner.png);
+    background-color: #491D50;
+  }
+  .main-heading {
+    padding-top:10%;
+    font-size: 3rem;
     text-align: center;
-    color: #fff;
   }
-  footer p {
-    padding: 0.5%;
+  .sub-heading1 {
+    font-size: 3rem;
+    text-align: center;
   }
+  .sub-heading2 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 11% 0% 18% 0%;
+  }
+  .sub-heading3 {
+    font-size: 2rem;
+  }
+  .btn-primary {
+    font-size: 1.7rem;
+    margin-bottom: 19%;
+  }
+  .video-section1 {
+    height: 45vh;
+  }
+  .video-section1-heading {
+    padding: 7% 0% 5% 0%;
+    font-size: 2rem;
+  }
+  .video1{
+    width: 300px;
+    height: 200px;
+  }
+  .online-section {
+    height: 110vh;
+  }
+  .online-heading {
+    font-size: 2rem;
+  }
+  .online-content {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .online-content1 {
+    padding-top: 4%;
+  }
+  .online-content2 {
+    padding-top: 4%;
+  }
+  .online-img1 {
+    width: 120px;
+    height: 120px;
+  }
+  .online-img2 {
+    width: 120px;
+    height: 120px;
+  }
+  .online-main-description {
+    font-size: 1.5rem;
+  }
+  .online-sub-description {
+    font-size: 1.2rem;
+  }
+  .btn-primary-2 {
+    width:25rem;
+  }
+  .video-section2 {
+    height:75vh;
+  }
+  .video-section2-heading {
+    font-size: 2.5rem;
+  }
+  .video3{
+    padding-top: 3%;
+    width:300px;
+  }
+  .video2{
+    padding-top: 3%;
+    width: 300px;
+  }
+  input {
+    width: 30rem;
+  }
+  .btn-primary-4 {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+  .contact-section {
+    height: 65vh;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .main-heading {
+    font-size: 2.5rem;
+  }
+  .sub-heading1 {
+    font-size: 2.5rem;
+  }
+  .sub-heading2 {
+    font-size: 1.5rem;
+  }
+  .btn-primary {
+    font-size: 1.5rem;
+   margin-bottom: 12%;
+  }
+  .video1{
+    width: 270px;
+    height: 160px;
+  }
+  .online-section {
+    height: 125vh;
+  }
+  .online-main-description {
+    font-size: 1.1rem;
+  }
+  .online-sub-description {
+    font-size: 1rem;
+  }
+  .video3{
+    padding-top: 3%;
+    width:270px;
+  }
+  .video-section2 {
+    height:80vh;
+  }
+  .video2{
+    padding-top: 3%;
+    width: 270px;
+  }
+  input {
+    width: 30rem;
+  }
+  .btn-primary-4 {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+  .contact-section {
+    height: 85vh;
+  }
+}
